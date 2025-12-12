@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himansu Kumar Sahu - Full Stack Developer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#8B5CF6', // Violet-500
+                        'secondary-color': '#F59E0B', // Amber-500
+                        'bg-light': '#F9FAFB',
+                        'text-light': '#1F2937',
+                        'bg-dark': '#111827',
+                        'text-dark': '#F9FAFB',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-bg-light text-text-light transition-colors duration-300 dark:bg-bg-dark dark:text-text-dark">
+
+    <header class="sticky top-0 z-50 shadow-md backdrop-blur-sm bg-bg-light/80 dark:bg-bg-dark/80">
+        <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-primary-color">HIMANSU KUMAR SAHU</h1>
+            <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                <svg id="sun-icon" class="w-6 h-6 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                <svg id="moon-icon" class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <section id="hero" class="flex flex-col md:flex-row items-center gap-10 md:gap-16 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-8 shadow-lg">
+            <div class="md:w-3/5 space-y-4 text-center md:text-left">
+                <p class="text-xl font-semibold text-secondary-color">Hello, I'm</p>
+                <h2 class="text-5xl sm:text-6xl font-extrabold leading-tight">Himansu Kumar Sahu</h2>
+                <h3 class="text-3xl font-bold text-primary-color">Full Stack Web Developer (MERN)</h3>
+                <p class="text-lg mt-4 max-w-xl mx-auto md:mx-0">An aspiring developer passionate about crafting modern, responsive, and efficient web applications that create real-world value.</p>
+                <p class="text-md mt-2 text-gray-600 dark:text-gray-400">📍 Berhampur, Odisha, India</p>
+                <div class="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
+                    <a href="#projects" class="px-6 py-3 bg-primary-color text-white font-semibold rounded-lg shadow-lg hover:bg-violet-700 transition duration-300">View Projects</a>
+                    <a href="mailto:himansuk1211@gmail.com" class="px-6 py-3 border-2 border-primary-color text-primary-color font-semibold rounded-lg hover:bg-primary-color hover:text-white transition duration-300">Contact Me</a>
+                </div>
+            </div>
+            
+            <div class="md:w-2/5 flex justify-center md:justify-end">
+                <div class="w-64 h-64 sm:w-80 sm:h-80 bg-white dark:bg-gray-800 rounded-lg shadow-xl flex items-center justify-center overflow-hidden border-4 border-primary-color p-2">
+                    <img src="himansu.jpg" alt="Himansu Kumar Sahu Profile Picture" class="w-full h-full object-cover rounded-md">
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-200 dark:border-gray-700">
+
+        <section id="skills" class="space-y-6">
+            <h2 class="text-4xl font-bold text-center text-primary-color">🛠 Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+                <div class="text-center">
+                    <p class="font-bold text-secondary-color">Frontend</p>
+                    <p>HTML, CSS, Tailwind CSS, React.js</p>
+                </div>
+                <div class="text-center">
+                    <p class="font-bold text-secondary-color">Backend</p>
+                    <p>Node.js, JavaScript, Python</p>
+                </div>
+                <div class="text-center">
+                    <p class="font-bold text-secondary-color">Databases</p>
+                    <p>(Learning) MongoDB, MySQL</p>
+                </div>
+                <div class="text-center">
+                    <p class="font-bold text-secondary-color">Tools & VC</p>
+                    <p>GitHub, VS Code</p>
+                </div>
+            </div>
+            <div class="text-center text-sm text-gray-500 dark:text-gray-400 pt-4">
+                <p>Future Learning Path: GenAI, Cloud Computing, DevOps</p>
+            </div>
+        </section>
+
+        <hr class="border-gray-200 dark:border-gray-700">
+
+        <section id="projects" class="space-y-8">
+            <h2 class="text-4xl font-bold text-center text-primary-color">🚀 Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-secondary-color">
+                    <h3 class="text-2xl font-semibold mb-2">Messaging app</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Fully responsive front-end website, demonstrating modern frameworks and client-server interaction.</p>
+                    <p class="text-sm font-medium text-primary-color">Tech Stack: HTML, CSS, JavaScript</p>
+                    <a href="https://e-shop-hk.netlify.app/" target="_blank" class="inline-flex items-center text-md font-semibold text-white bg-primary-color px-4 py-2 rounded-lg hover:bg-violet-700 transition duration-300">View Project</a>
+
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-secondary-color">
+                    <h3 class="text-2xl font-semibold mb-2">Pomodoro Clock</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">A productivity app to enhance concentration by dividing work into focus sessions and short breaks with dynamic timer updates.</p>
+                    <p class="text-sm font-medium text-primary-color">Tech Stack: HTML, CSS, JavaScript</p>
+                    <a href="https://pomodoro-clock-one-theta.vercel.app/" target="_blank" class="inline-flex items-center text-md font-semibold text-white bg-primary-color px-4 py-2 rounded-lg hover:bg-violet-700 transition duration-300">View Project</a>
+
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-secondary-color">
+                    <h3 class="text-2xl font-semibold mb-2">Notes Making Website-NOTORA</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">A functional web app using local storage to preserve user data, allowing seamless creation, editing, and deletion of personal notes.</p>
+                    <p class="text-sm font-medium text-primary-color">Tech Stack: HTML, CSS, JavaScript</p>
+                    <a href="https://notora-hks.vercel.app/" target="_blank" class="inline-flex items-center text-md font-semibold text-white bg-primary-color px-4 py-2 rounded-lg hover:bg-violet-700 transition duration-300">View Project</a>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-secondary-color">
+                    <h3 class="text-2xl font-semibold mb-2">Chess Game</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">A complete chess game & Supports pass-and-play and vs-computer modes with intuitive UI and move validation.</p>
+                    <p class="text-sm font-medium text-primary-color">Tech Stack: HTML, CSS, JavaScript, Python</p>
+                    <a href="https://chess-hks.vercel.app/" target="_blank" class="inline-flex items-center text-md font-semibold text-white bg-primary-color px-4 py-2 rounded-lg hover:bg-violet-700 transition duration-300">View Project</a>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-secondary-color">
+                    <h3 class="text-2xl font-semibold mb-2">Portfolio Website (This one!)</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Showcases projects and skills using responsive design principles and a visually appealing, modern developer layout.</p>
+                    <p class="text-sm font-medium text-primary-color">Tech Stack: HTML, CSS, JavaScript</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-secondary-color">
+                    <h3 class="text-2xl font-semibold mb-2">Weather App</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">A modern, responsive weather application built with HTML, CSS, and JavaScript.</p>
+                    <p class="text-sm font-medium text-primary-color">Tech Stack: HTML, CSS, JavaScript, API integration</p>
+                    <a href="https://weathersphere-seven.vercel.app/" target="_blank" class="inline-flex items-center text-md font-semibold text-white bg-primary-color px-4 py-2 rounded-lg hover:bg-violet-700 transition duration-300">View Project</a>
+                </div>
+            </div>
+            <div class="text-center pt-6">
+                <a href="https://github.com/himansu1211" target="_blank" class="text-lg text-primary-color font-semibold hover:underline">See all projects on GitHub ➔</a>
+            </div>
+        </section>
+
+        <hr class="border-gray-200 dark:border-gray-700">
+
+        <section id="certifications" class="space-y-8">
+            <h2 class="text-4xl font-bold text-center text-primary-color">🎓 Education & Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg space-y-4">
+                    <h3 class="text-2xl font-semibold text-secondary-color">Education</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>*Class XII (Science Stream):* Sankalp Senior Secondary School, Berhampur (CBSE)</li>
+                        <li>*Class X:* DAV Public School, Berhampur (CBSE Board)</li>
+                        <li class="font-bold mt-2">Currently seeking college admission in Computer Science and Engineering.</li>
+                    </ul>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg space-y-4">
+                    <h3 class="text-2xl font-semibold text-secondary-color">Certifications</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Various courses completed to strengthen development skills.</p>
+                    <a href="https://drive.google.com/drive/folders/1suLH5X9grYBqIW2CHJq6h3No2tVfKdW_?usp=drive_link" target="_blank" class="inline-flex items-center text-lg text-primary-color font-semibold hover:underline">
+                        View All Certificates 
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-200 dark:border-gray-700">
+
+        <section id="about" class="space-y-8">
+            <h2 class="text-4xl font-bold text-center text-primary-color">🧠 Core & Goals</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-secondary-color mb-3">Core Strengths</h3>
+                    <ul class="list-disc list-inside text-left mx-auto max-w-xs space-y-1">
+                        <li>Self-motivated learner</li>
+                        <li>Strong problem-solving mindset</li>
+                        <li>Capable of transforming ideas into prototypes</li>
+                        <li>Solid understanding of fundamentals</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-secondary-color mb-3">Interests & Hobbies</h3>
+                    <ul class="list-disc list-inside text-left mx-auto max-w-xs space-y-1">
+                        <li>Playing strategic games (Chess)</li>
+                        <li>Exploring new technologies</li>
+                        <li>Developing personal projects</li>
+                        <li>Coding and continuous self-improvement</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-secondary-color mb-3">Future Goals</h3>
+                    <p class="text-lg font-medium">To evolve into a Full Stack + DevOps Engineer, skilled in full lifecycle development, including deployment pipelines.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-100 dark:bg-gray-900 py-8 mt-12">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <h3 class="text-2xl font-bold text-primary-color">Get In Touch</h3>
+            <div class="flex flex-wrap justify-center gap-6 text-lg">
+                <a href="tel:+919348568873" class="hover:text-primary-color transition"><span class="font-bold">📞</span> +91 93485 68873</a>
+                <a href="mailto:himansuk1211@gmail.com" class="hover:text-primary-color transition"><span class="font-bold">✉</span> himansuk1211@gmail.com</a>
+                <a href="https://linkedin.com/in/himansu-kumar-sahu-377916334" target="_blank" class="hover:text-primary-color transition"><span class="font-bold">🔗</span> LinkedIn</a>
+                <a href="https://github.com/himansu1211" target="_blank" class="hover:text-primary-color transition"><span class="font-bold">💻</span> GitHub</a>
+            </div>
+            <p class="text-sm pt-4">&copy; 2025 Himansu Kumar Sahu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
